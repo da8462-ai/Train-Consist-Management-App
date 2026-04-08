@@ -1,7 +1,6 @@
-import java.util.*;
+import java.util.LinkedList;
 
 public class TrainApp {
-
     public static void main(String[] args) {
 
         // Step 1: Welcome Message
