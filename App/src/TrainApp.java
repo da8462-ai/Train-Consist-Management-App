@@ -7,37 +7,21 @@ public class TrainApp {
         // Step 1: Welcome Message
         System.out.println("=== Train Consist Management App ===");
 
-        // Step 2: Create ArrayList for Passenger Bogies
-        ArrayList<String> bogies = new ArrayList<>();
+        // Step 2: Create HashSet for Bogie IDs
+        HashSet<String> bogieIds = new HashSet<>();
 
-        // Step 3: Add Passenger Bogies
-        bogies.add("Sleeper");
-        bogies.add("AC Chair");
-        bogies.add("First Class");
+        // Step 3: Add Bogie IDs (including duplicates)
+        bogieIds.add("BG101");
+        bogieIds.add("BG102");
+        bogieIds.add("BG103");
+        bogieIds.add("BG101"); // duplicate
+        bogieIds.add("BG102"); // duplicate
 
-        // Step 4: Display Bogies after Addition
-        System.out.println("\nPassenger Bogies after adding:");
-        System.out.println(bogies);
+        // Step 4: Display Unique Bogie IDs
+        System.out.println("\nUnique Bogie IDs:");
+        System.out.println(bogieIds);
 
-        // Step 5: Remove one bogie (AC Chair)
-        bogies.remove("AC Chair");
-
-        // Step 6: Display after Removal
-        System.out.println("\nAfter removing AC Chair:");
-        System.out.println(bogies);
-
-        // Step 7: Check existence using contains()
-        if (bogies.contains("Sleeper")) {
-            System.out.println("\nSleeper bogie exists in the train.");
-        } else {
-            System.out.println("\nSleeper bogie does not exist.");
-        }
-
-        // Step 8: Final State
-        System.out.println("\nFinal Passenger Bogies:");
-        System.out.println(bogies);
-
-        // Step 9: Continue program
+        // Step 5: Program continues
         System.out.println("\nProgram continues...");
     }
 }
